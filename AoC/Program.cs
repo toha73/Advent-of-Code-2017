@@ -6,7 +6,6 @@ namespace AoC_day_19_part_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }

@@ -3,14 +3,14 @@ using NUnit.Framework;
 
 namespace AoC2018.Tests.Day19
 {
-    public class AdventTest
+    public class Day19PartOneTest
     {
-        private Advent _sut;
+        private Day19PartOne _sut;
 
         [SetUp]
         public void BeforeEach()
         {
-            _sut = new Advent();
+            _sut = new Day19PartOne();
         }
 
         [Test]

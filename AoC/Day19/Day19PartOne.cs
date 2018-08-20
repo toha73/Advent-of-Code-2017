@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AoC2018.Day19
 {
-    public class Advent
+    public class Day19PartOne
     {
         private string[] _diagram;
         private PositionInfo _currentPosition;
