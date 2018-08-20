@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AoC2018.Day19
+namespace AoC2017.Day19
 {
-    public class Day19PartOne
+    public class Day19Part2
     {
         private string[] _diagram;
         private PositionInfo _currentPosition;
-        private readonly List<char> _visitedNodes = new List<char>();
         private Direction _direction = Direction.Down;
+        private int _stepsTaken = 0;
 
-        public string Solution(string input)
+        public int Solution(string input)
         {
             ParseInput(input);
 
@@ -18,7 +18,7 @@ namespace AoC2018.Day19
 
             FollowPath();
 
-            return new string(_visitedNodes.ToArray());
+            return _stepsTaken;
         }
 
         private void FollowPath()
@@ -35,11 +35,8 @@ namespace AoC2018.Day19
                 }
                 else
                 {
-                    if (char.IsLetter(nextPosition.Char))
-                    {
-                        _visitedNodes.Add(nextPosition.Char);
-                    }
                     _currentPosition = nextPosition;
+                    _stepsTaken++;
                 }
             }
 
@@ -132,13 +129,17 @@ namespace AoC2018.Day19
         {
             _diagram = input.Split(Environment.NewLine);
         }
+
+        public enum Direction : byte
+        {
+            Up = 0,
+            Right = 1,
+            Down = 2,
+            Left = 3
+        }
+
+
     }
 
-    public enum Direction : byte
-    {
-        Up = 0,
-        Right = 1,
-        Down = 2,
-        Left = 3
-    }
+
 }

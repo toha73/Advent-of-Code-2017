@@ -1,4 +1,4 @@
-﻿namespace AoC2018.Day19
+﻿namespace AoC2017.Day19
 {
     public static class Input
     {

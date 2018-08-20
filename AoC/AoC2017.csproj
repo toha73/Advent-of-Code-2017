@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <AssemblyName>AoC2018</AssemblyName>
+    <AssemblyName>AoC2017</AssemblyName>
   </PropertyGroup>
 
 </Project>

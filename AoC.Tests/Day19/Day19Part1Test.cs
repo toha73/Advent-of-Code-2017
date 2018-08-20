@@ -1,16 +1,16 @@
-﻿using AoC2018.Day19;
+﻿using AoC2017.Day19;
 using NUnit.Framework;
 
-namespace AoC2018.Tests.Day19
+namespace AoC2017.Tests.Day19
 {
-    public class Day19PartOneTest
+    public class Day19Part1Test
     {
-        private Day19PartOne _sut;
+        private Day19Part1 _sut;
 
         [SetUp]
         public void BeforeEach()
         {
-            _sut = new Day19PartOne();
+            _sut = new Day19Part1();
         }
 
         [Test]
